@@ -9,5 +9,9 @@ const req = require.context('./svg', false, /\.svg$/)
 const requireAll = requireContext => requireContext.keys().map(requireContext)
 requireAll(req)
 
+
+
+
+
 // 相当于把svg下的所有的svg图片打包到了项目中
 // 如果想用svg图片 就在svg目录下去寻找就可以了

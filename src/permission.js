@@ -59,6 +59,8 @@ router.beforeEach(async(to, from, next) => {
   }
 })
 
+
+
 // 路由后置守卫
 router.afterEach(() => {
   // finish progress bar
