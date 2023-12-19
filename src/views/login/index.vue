@@ -4,31 +4,35 @@
     <div class="form">
       <h1>登录</h1>
       <el-card shadow="never" class="login-card">
-
         <!--登录表单-->
         <el-form>
           <el-form-item>
-            <el-input placeholder="请输入账号"/>
+            <el-input placeholder="请输入账号" v-model="user" />
           </el-form-item>
           <el-form-item>
-            <el-input placeholder="请输入密码"/>
+            <el-input placeholder="请输入密码" v-model="password" />
           </el-form-item>
           <el-form-item>
             <el-checkbox>我同意用户平台使用协议</el-checkbox>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" style="width: 350px;">登录</el-button>
+            <el-button type="primary" style="width: 350px">登录</el-button>
           </el-form-item>
         </el-form>
-        
       </el-card>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name : "Login"
-}
+  name: "Login",
+  data() {
+    return {
+      user: "admin",
+      password: 123456,
+    };
+  },
+};
 </script>
 <style lang="scss">
 .login-container {
@@ -82,7 +86,7 @@ export default {
       }
     }
     .el-checkbox {
-      color:#606266;
+      color: #606266;
     }
   }
 }
