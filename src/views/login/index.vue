@@ -23,6 +23,8 @@
     </div>
   </div>
 </template>
+
+
 <script>
 export default {
   name: "Login",
@@ -34,6 +36,7 @@ export default {
   },
 };
 </script>
+
 <style lang="scss">
 .login-container {
   display: flex;
